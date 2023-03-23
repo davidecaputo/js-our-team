@@ -41,3 +41,10 @@ const team = [
         image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
+
+for(let i = 0; i < team.length; i++){
+    console.log('nome:', team[i].name);
+    console.log('cognome:', team[i].surname);
+    console.log('ruolo:', team[i].role);
+    console.log('immagine:', team[i].image);
+}
