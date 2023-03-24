@@ -42,7 +42,19 @@ const team = [
     }
 ]
 
+const container = document.querySelector('.container');
+
 for(let i = 0; i < team.length; i++){
+    container.innerHTML += `
+        <div class="card">
+            <img src="./img/${team[i].image}" class="card-img-top" alt="${team[i].name} ${team[i].surname}">
+            <div class="card-body text-center">
+                <h5 class="card-title">${team[i].name} ${team[i].surname}</h5>
+                <span class="card-text">Ruolo</span>
+                <p class="card-text">${team[i].role}</p>
+        </div>
+</div>
+`
     console.log('nome:', team[i].name);
     console.log('cognome:', team[i].surname);
     console.log('ruolo:', team[i].role);
